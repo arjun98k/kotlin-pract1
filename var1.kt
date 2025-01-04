@@ -1,3 +1,7 @@
 fun main(args: Array<String>) {
-    println("hii")
+  
+   val list = listOf(11, 12, 13, 14) // Correct way to define an immutable list
+   for (i in list) { // Iterate through the list
+       println(i) // Print each element
+   }
 }
