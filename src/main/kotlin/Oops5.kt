@@ -1,10 +1,13 @@
 fun main() {
-    val dog = Dogs()
+    val dog = Dogs("",0)
     dog.eat()
+    dog.sound()
 
 }
 
-abstract class Animal{
+abstract class Animal(val name: String , val animalRollId: Int){
+
+
     abstract fun eat()
 
     fun sound(){
@@ -13,7 +16,7 @@ abstract class Animal{
 
 }
 
-class Dogs:Animal(){
+class Dogs(name: String, animalRollId: Int) :Animal(name, animalRollId){
     override fun eat(){
         println("dogs like bone")
     }
